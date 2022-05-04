@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+body {
+    background-color: #141519;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Estilo de la tarjeta */
+#contenedor {
+    margin: 10% 0%;
+    background-color: #212832;
+    border-radius: 2rem;
+    padding: 2rem;
+    width: 20%;
+}
+
+/* Estilo de la estrella */
+#estrella {
+    padding: 0.7rem;
+    margin: 0rem 0rem 1.5rem 0rem;
+    border-radius: 50%;
+    background-color: #333d47;
+}
+
+/* Estilo del titulo */
+h1 {
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+/* Estilo de los parrafos */
+p {
+    color: #6e7783;
+    padding: 0.5rem 0rem;
+}
+
+/* Estilo de los numeros */
+.numeros {
+    background-color: #333d47;
+    color: #6e7783;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin: 0.5rem 0.2rem;
+}
+
+
+/* Estilo del formulario */
+#submit {
+    font-weight: bold;
+    color: #ffffff;
+    width: 100%;
+    margin: 1rem 0rem 0rem 0.2rem;
+    height: 2.3rem;
+    border-radius: 2rem;
+    background-color: #FE7817;
+}
+#submit:hover {
+    background-color: #ffffff;
+    color: #FE7817;
+}
+
+/* Estilo de los botones al interactuar */
+/* Cambiar color del numero elegido */
+.numeroElegido {
+    color: #ffffff;
+    background-color: #FE7817;
+}
+a button {
+    text-decoration: none;
+    color: #6e7783;
+}
+a button:hover {
+    color: white;
+    background-color: #6e7783;
+}
+
+/* Estilo del footer */
+footer {
+    color: rgb(255, 255, 255);
+    clear: both;         
+    font-size: 0.8rem; 
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+}
+footer a:visited {
+    color: rgb(174, 189, 255);
+}
+footer a:hover {
+    color: rgb(131, 250, 210);
+}
+
+/* Estilo del parrafo sobre el puntaje seleccionado */
+#seleccion {
+    margin: 2rem 0rem;
+    background-color: #333d47;
+    width: 60%;
+    color: #FE7817;
+    border-radius: 2rem;
+}
+
+/* Estilo del nuevo parrafo a mostrar */
+#parrafo {
+    margin-bottom: 0.5rem;
+    width: 85%;
+}
+
+/* Estilo tarjerta de agradecimiento y puntaje seleccionado */
+.tarjetaAgradecimiento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Media queries */
+@media (min-width: 1800px) {
+    #contenedor {
+        width: 15.5%;
+    }
+}
+@media (min-width: 2500px) {
+    #contenedor {
+        width: 20%;
+    }
+    .numeros {
+        margin: 1rem 1.5rem;
+    }
+    p {
+        padding: 1rem 0rem;
+    }
+}
+
+@media (max-width: 500px){
+    #contenedor {
+        margin: 20% 0%;
+        width: 70%;
+        height: 50%;
+    }
+}
+@media (max-width: 400px){
+    #contenedor {
+        margin: 20% 0%;
+        padding: 1rem;
+        width: 77%;
+        height: 50%;
+    }
+}
+@media (max-width: 320px){
+    #contenedor {
+        margin: 20% 0%;
+        width: 90%;
+        border-radius: 0.5rem;
+    }
+}
