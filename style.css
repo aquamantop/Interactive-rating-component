@@ -20,7 +20,7 @@ body {
     background-color: #212832;
     border-radius: 2rem;
     padding: 2rem;
-    width: 20%;
+    width: 22%;
 }
 
 /* Estilo de la estrella */
@@ -50,7 +50,7 @@ p {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    margin: 0.5rem 0.2rem;
+    margin: 0.5rem 0.3rem;
 }
 
 
