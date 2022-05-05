@@ -53,7 +53,6 @@ p {
     margin: 0.5rem 0.3rem;
 }
 
-
 /* Estilo del formulario */
 #submit {
     font-weight: bold;
@@ -75,11 +74,7 @@ p {
     color: #ffffff;
     background-color: #FE7817;
 }
-a button {
-    text-decoration: none;
-    color: #6e7783;
-}
-a button:hover {
+input:hover {
     color: white;
     background-color: #6e7783;
 }
@@ -128,7 +123,7 @@ footer a:hover {
 /* Media queries */
 @media (min-width: 1800px) {
     #contenedor {
-        width: 15.5%;
+        width: 17%;
     }
 }
 @media (min-width: 2500px) {
