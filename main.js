@@ -4,13 +4,18 @@ window.addEventListener('load', () => {
     const numeros = document.querySelectorAll(".numeros")
     let eleccion = 0;
 
+    console.log(eleccion)
+
     numeros.forEach((e) => {
         e.addEventListener('click', () => {
             numeros.forEach(e=>e.classList.remove("numeroElegido"));
             e.classList.add("numeroElegido");
-            eleccion = e.innerHTML;
+            eleccion = e.value;
+            console.log(eleccion)
         });
     });
+
+
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -18,13 +23,13 @@ window.addEventListener('load', () => {
         if (eleccion === 0){
             alert("Elegir numero")
         } else tarjetaAgradecimiento(eleccion);
-
+        console.log(eleccion)
     });
 
     function tarjetaAgradecimiento(id){
         const main = document.querySelector("main")
         form.innerHTML = "";
-
+        console.log(eleccion)
         main.innerHTML = `
         <img src="./images/illustration-thank-you.svg" alt="Agradecimiento">
         <p id="seleccion">
